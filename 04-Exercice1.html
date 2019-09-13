@@ -24,22 +24,20 @@
     <script>
         $(function() {
         
-           $('#MonFormulaire').submit( function(e){
-            e.preventDefault(); //permet de stopper la redirection du navigateur
+           $('#MonFormulaire').submit( function(evenement){
+            evenement.preventDefault(); //permet de stopper la redirection du navigateur
 
              /*  cacher le formulaire' */
             $('#MonFormulaire').hide();
 
            /*  Création du 'p' */
           /*  var nom = $('#nomcomplet').val();
-          
+
             $('<p>Ca marche</p>').appendTo('body').html('Bonjour '+ nom + ' tu es presque pas nulle'); */
             $('<p>Bonjour ' + $('#nomcomplet').val() + '</p>').appendTo('body');
            
             //$('#MonFormulaire').replaceWith('<p>Bonjour ' + $('#nomcomplet').val() + '</p>');
-
-           
-
+            //replacewith => remplace information formulaire,  pas de retour en arrière possible
            });
           
 
