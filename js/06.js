@@ -1,6 +1,9 @@
 
 // ---1 Ecouter la soumission du formulaire
 $(function(){
+ 
+
+
     $('#FormContact').submit(function(e){
         // ---2 Stopper la redirection de la page
         e.preventDefault();
